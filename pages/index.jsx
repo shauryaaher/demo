@@ -21,14 +21,64 @@ export default function Home() {
           <ul className={styles.nav_links}>
             <li>
               <Link className={styles.navcontent} href="/otherPage">
-                The other page
+                General electronics
               </Link>
             </li>
           </ul>
         </nav>
       </header>
-      <h1 className={styles.content}>Hello world.</h1>
-      <div className={styles.content}>Please visit the other page.</div>
+      <div className={styles.main}>
+        <div className={styles.card}>
+          <div className={styles.container}>
+            <h4>
+              <strong>Chef d'oeuvre</strong>
+            </h4>
+            <p>
+              <em>The same as its name.</em>
+            </p>
+            <Image
+              src="/fridge.jpg"
+              alt="refridgerator"
+              height={250}
+              width={320}
+            />
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.container}>
+            <h4>
+              <strong>Lock-duck</strong>
+            </h4>
+            <p>
+              <em>Safe. Simple. Reliable.</em>
+            </p>
+            <Image
+              style={{paddingLeft: "30px", paddingRight: "10px"}}
+              src="/washing-machine.jpg"
+              alt="washing-machine"
+              height={250}
+              width={300}
+            />
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.container}>
+            <h4>
+              <strong>Neptune</strong>
+            </h4>
+            <p>
+              <em>Brilliant colors.</em>
+            </p>
+            <Image
+              style={{ paddingLeft: "40px", paddingRight: "70px" }}
+              src="/tv.jpg"
+              alt="television"
+              height={250}
+              width={350}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 }

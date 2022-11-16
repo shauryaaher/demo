@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 350px;
+  margin: 10px 30px;
+  float: right;
+}
+
+.product {
+  padding: 0 70px 0 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
 .container {
-  padding: 0 2rem;
+  padding: 2px 16px;
 }
 
 .nav_links li a {
@@ -35,7 +52,6 @@
   padding-top: 12px;
 }
 
-
 .navigator ul li a:hover {
   color: cyan;
 }
@@ -60,6 +76,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: inline-block;
 }
 
 .code {
@@ -69,24 +86,4 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
 }
