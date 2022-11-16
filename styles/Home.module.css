@@ -18,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  height: 50px;
   background-color: #333;
 }
 
@@ -31,10 +32,18 @@
   display: inline-block;
   line-height: 5px;
   margin: 0 5px;
+  padding-top: 12px;
 }
+
 
 .navigator ul li a:hover {
   color: cyan;
+}
+
+.logoo {
+  mix-blend-mode: lighten;
+  width: 115px;
+  align-self: flex-end;
 }
 
 .content {

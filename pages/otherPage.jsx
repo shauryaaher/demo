@@ -1,5 +1,6 @@
 import styles from "../styles/Other.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import Head from "next/head";
 
 export async function getServerSideProps() {
@@ -20,8 +21,17 @@ export default function otherPage(props) {
       </Head>
       <header className={styles.header}>
         <nav className={styles.nav}>
+          <Image
+            className={styles.logoo}
+            src="/logo.png"
+            height={60}
+            width={110}
+            alt="Logo"
+          />
           <ul className={styles.list}>
-            <li><Link href="/">Home</Link></li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
           </ul>
         </nav>
       </header>
