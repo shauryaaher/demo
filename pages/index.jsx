@@ -31,7 +31,7 @@ export default function Home() {
         <div className={styles.card}>
           <div className={styles.container}>
             <h4>
-              <strong>Chef d'oeuvre</strong>
+              <strong>Chef d&apos;oeuvre</strong>
             </h4>
             <p>
               <em>The same as its name.</em>
