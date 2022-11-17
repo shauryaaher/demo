@@ -1,0 +1,75 @@
+.default {
+  background-color: #333;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.navigator ul {
+  float: right;
+  justify-content: center;
+}
+
+.nav_links li a:hover {
+  color: cyan;
+}
+
+.nav_links li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+}
+
+.navigator ul li {
+  display: inline-block;
+  margin: 5px;
+  padding-top: 13px;
+  line-height: 6px;
+  margin: 0 5px;
+}
+
+.logoo {
+  mix-blend-mode: lighten;
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 10px;
+  height: 63px;
+}
+
+.card {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+  width: 390px;
+  height: 370px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-right: 11px;
+  border-radius: 6px;
+  float: right;
+}
+
+.container {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+.toggler {
+  width: 400px;
+  height: 400px;
+  margin-left: 20px;
+  margin-top: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.list {
+  padding-left: 110px;
+  padding-top: 50px;
+}
