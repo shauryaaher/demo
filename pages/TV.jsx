@@ -45,7 +45,7 @@ function Price() {
               paddingLeft: "40px",
               paddingRight: "5px",
             }}
-            src="/TV.jpg"
+            src="/tv.jpg"
             alt="television"
             height={335}
             width={340}
