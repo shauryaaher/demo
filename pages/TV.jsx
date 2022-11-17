@@ -18,7 +18,7 @@ function Header() {
 
         <ul className={styles.nav_links}>
           <li>
-            <Link className={styles.navcontent} href="/generalElectronics">
+            <Link className={styles.navcontent} href="/general-electronics">
               General electronics
             </Link>
           </li>
