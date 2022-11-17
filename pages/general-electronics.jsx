@@ -3,16 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 
-export async function getServerSideProps() {
-  const req = await fetch("/api/hello");
-  const data = await req.text();
-  return {
-    props: {
-      data: data,
-    },
-  };
-}
-
 function Header() {
   return (
     <>
@@ -38,16 +28,13 @@ function Header() {
   );
 }
 
-export default function otherPage(props) {
+export default function otherPage() {
   return (
     <>
       <Head>
         <title>Other Page</title>
       </Head>
       <Header />
-      <center>
-        <h1>{props.data}</h1>
-      </center>
       <div className={styles.main}>
         <div className={styles.card}>
           <div className={styles.container}>
