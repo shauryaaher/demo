@@ -4,7 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 
 export async function getServerSideProps() {
-  const req = await fetch("http://localhost:3000/api/hello");
+  const req = await fetch("/api/hello");
   const data = await req.text();
   return {
     props: {
