@@ -13,21 +13,20 @@ export async function getServerSideProps() {
   };
 }
 
-export default function otherPage(props) {
+function Header() {
   return (
     <>
-      <Head>
-        <title>Other Page</title>
-      </Head>
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <Image
-            className={styles.logoo}
-            src="/logo.png"
-            height={60}
-            width={110}
-            alt="Logo"
-          />
+          <Link href="/">
+            <Image
+              className={styles.logoo}
+              src="/logo.png"
+              height={60}
+              width={110}
+              alt="Logo"
+            />
+          </Link>
           <ul className={styles.list}>
             <li>
               <Link href="/">Home</Link>
@@ -35,6 +34,17 @@ export default function otherPage(props) {
           </ul>
         </nav>
       </header>
+    </>
+  );
+}
+
+export default function otherPage(props) {
+  return (
+    <>
+      <Head>
+        <title>Other Page</title>
+      </Head>
+      <Header />
       <center>
         <h1>{props.data}</h1>
       </center>
@@ -47,7 +57,13 @@ export default function otherPage(props) {
             <em>
               <p>Secure. Strong. Easy to use.</p>
             </em>
-            <Image style={{paddingRight: "20px"}} src="/phone.jpg" alt="phone" height={280} width={300} />
+            <Image
+              style={{ paddingRight: "20px" }}
+              src="/phone.jpg"
+              alt="phone"
+              height={280}
+              width={300}
+            />
           </div>
         </div>
         <div className={styles.card}>
@@ -77,7 +93,13 @@ export default function otherPage(props) {
             <p>
               <em>Powerful with a a long battery life.</em>
             </p>
-            <Image style={{paddingRight: "20px"}} src="/laptop.jpg" alt="laptop" height={280} width={300} />
+            <Image
+              style={{ paddingRight: "50px" }}
+              src="/laptop.jpg"
+              alt="laptop"
+              height={280}
+              width={320}
+            />
           </div>
         </div>
       </div>
