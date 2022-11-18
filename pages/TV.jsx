@@ -58,28 +58,78 @@ function Price() {
   );
 }
 
-function Size() {
+function SizeBoxes() {
   return (
     <>
-      <div className={styles.card}>
-        <div className={styles.container}>
-          <h4>
-            <strong>Size</strong>
-          </h4>
-          <p>
-            <em>Starting at 30-inches</em>
-          </p>
-          <ul className={styles.list} style={{ paddingLeft: "150px" }}>
-            <li>30-inch</li>
-            <li>50-inch</li>
-            <li>80-inch</li>
-            <li>120-inch</li>
-            <li>200-inch</li>
-          </ul>
-        </div>
-      </div>
+      <input type="checkbox" className={styles.checkbox} id="30" />
+      <label htmlFor="30">30-inch</label>
+      <br />
+      <input type="checkbox" className={styles.checkbox} id="50" />
+      <label htmlFor="50">50-inch</label>
+      <br />
+      <input type="checkbox" className={styles.checkbox} id="90" />
+      <label htmlFor="90">90-inch</label>
+      <br />
+      <input type="checkbox" className={styles.checkbox} id="120" />
+      <label htmlFor="120">120-inch</label>
+      <br />
+      <input type="checkbox" className={styles.checkbox} id="150" />
+      <label htmlFor="150">150-inch</label>
+      <br />
     </>
   );
+}
+
+function Size() {
+  const [clicked, setClicked] = useState(false);
+  if (clicked === false) {
+    return (
+      <>
+        <div
+          style={{ height: "400px" }}
+          className={styles.card}
+          onClick={() => setClicked(!clicked)}
+        >
+          <div className={styles.container}>
+            <h4>
+              <strong>Sizes</strong>
+            </h4>
+            <p>
+              <em>Starting at 30-inches. Click to see more.</em>
+            </p>
+            <Image
+              style={{ paddingLeft: "30px", paddingBottom: "80px" }}
+              src="/size.jpg"
+              alt="screen-size"
+              height={370}
+              width={330}
+            />
+          </div>
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <div
+          className={styles.card}
+          onClick={() => setClicked(!clicked)}
+          style={{ height: "100px" }}
+        >
+          <div className={styles.container}>
+            <h4>
+              <strong>Sizes</strong>
+            </h4>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.container}>
+            <SizeBoxes />
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 
 function ResolutionList() {
