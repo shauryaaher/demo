@@ -2,6 +2,7 @@ import styles from "../styles/TV.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import Head from "next/head";
 
 function Header() {
   return (
@@ -266,11 +267,16 @@ function Features() {
 
 export default function TV() {
   return (
-    <div className={styles.main}>
-      <Header />
-      <Price />
-      <Size />
-      <Features />
-    </div>
+    <>
+    <Head>
+      <title>Neptune</title>
+    </Head>
+      <div className={styles.main}>
+        <Header />
+        <Price />
+        <Size />
+        <Features />
+      </div>
+    </>
   );
 }

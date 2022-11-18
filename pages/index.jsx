@@ -62,7 +62,17 @@ function TV() {
   );
 }
 
-export default function Home() {
+export async function getServerSideProps() {
+  const req = await fetch("https://demo-five-ashy.vercel.app/api/hello");
+  const data = await req.text();
+  return {
+    props: {
+      heading: data,
+    },
+  };
+}
+
+export default function Home(props) {
   return (
     <>
       <Head>
@@ -87,6 +97,9 @@ export default function Home() {
           </ul>
         </nav>
       </header>
+      <center>
+        <h1>{props.heading}</h1>
+      </center>
       <div className={styles.main}>
         <TV />
         <Fridge />

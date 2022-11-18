@@ -31,7 +31,7 @@ function Header() {
   );
 }
 
-export default function otherPage() {
+export default function OtherPage() {
   return (
     <>
       <Head>
