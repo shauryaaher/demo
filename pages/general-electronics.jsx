@@ -21,6 +21,9 @@ function Header() {
             <li>
               <Link href="/">Home</Link>
             </li>
+            <li>
+              <Link href="/TV">Neptune</Link>
+            </li>
           </ul>
         </nav>
       </header>

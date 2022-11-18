@@ -82,6 +82,7 @@ export default function Home() {
               <Link className={styles.navcontent} href="/general-electronics">
                 General electronics
               </Link>
+              <Link href="/TV">Neptune</Link>
             </li>
           </ul>
         </nav>
