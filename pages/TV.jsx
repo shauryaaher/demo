@@ -1,34 +1,8 @@
 import styles from "../styles/TV.module.scss";
-import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { lazy, useState, Suspense } from "react";
 import Head from "next/head";
-
-function Header() {
-  return (
-    <header className={styles.default}>
-      <nav className={styles.navigator}>
-        <Link href="/">
-          <Image
-            className={styles.logoo}
-            src="/logo.png"
-            height={60}
-            width={110}
-            alt="Logo"
-          />
-        </Link>
-
-        <ul className={styles.nav_links}>
-          <li>
-            <Link className={styles.navcontent} href="/general-electronics">
-              General electronics
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
+const Header = lazy(() => import("../components/TVHeader.jsx"));
 
 function Price() {
   return (
@@ -39,7 +13,7 @@ function Price() {
             <strong>Price</strong>
           </h4>
           <p>
-            <em>Starting at INR. 20,000</em>
+            <em>INR. 100,000.</em>
           </p>
           <Image
             style={{
@@ -47,12 +21,11 @@ function Price() {
               paddingLeft: "40px",
               paddingRight: "5px",
             }}
-            src="/tv.jpg"
-            alt="television"
+            src="/money.png"
+            alt="money-icon"
             height={335}
-            width={340}
+            width={310}
           />
-          <p id="sliderVal"></p>
         </div>
       </div>
     </>
@@ -62,15 +35,6 @@ function Price() {
 function SizeBoxes() {
   return (
     <>
-      <input type="checkbox" className={styles.checkbox} id="30" />
-      <label htmlFor="30">30-inch</label>
-      <br />
-      <input type="checkbox" className={styles.checkbox} id="50" />
-      <label htmlFor="50">50-inch</label>
-      <br />
-      <input type="checkbox" className={styles.checkbox} id="90" />
-      <label htmlFor="90">90-inch</label>
-      <br />
       <input type="checkbox" className={styles.checkbox} id="120" />
       <label htmlFor="120">120-inch</label>
       <br />
@@ -86,11 +50,7 @@ function Size() {
   if (clicked === false) {
     return (
       <>
-        <div
-          style={{ height: "400px" }}
-          className={styles.card}
-          onClick={() => setClicked(!clicked)}
-        >
+        <div className={styles.card} onClick={() => setClicked(!clicked)}>
           <div className={styles.container}>
             <h4>
               <strong>Sizes</strong>
@@ -99,11 +59,11 @@ function Size() {
               <em>Starting at 30-inches. Click to see more.</em>
             </p>
             <Image
-              style={{ paddingLeft: "30px", paddingBottom: "80px" }}
-              src="/size.jpg"
-              alt="screen-size"
-              height={370}
-              width={330}
+              style={{ paddingRight: "30px" }}
+              src="/tv-dimensions.jpg"
+              alt="television-dimensions"
+              height={176}
+              width={390}
             />
           </div>
         </div>
@@ -239,11 +199,7 @@ function Features() {
   } else {
     return (
       <>
-        <div
-          className={styles.card}
-          style={{ height: "330px" }}
-          onClick={() => setDidClick(!didClick)}
-        >
+        <div className={styles.card} onClick={() => setDidClick(!didClick)}>
           <div className={styles.container}>
             <h4>
               <strong>Features</strong>
@@ -268,14 +224,17 @@ function Features() {
 export default function TV() {
   return (
     <>
-    <Head>
-      <title>Neptune</title>
-    </Head>
+      <Head>
+        <title>Neptune</title>
+      </Head>
       <div className={styles.main}>
-        <Header />
+        <Suspense fallback={<span>Loading...</span>}>
+          <Header />
+        </Suspense>
         <Price />
         <Size />
         <Features />
+        <br />
       </div>
     </>
   );
