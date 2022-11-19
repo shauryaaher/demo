@@ -27,7 +27,7 @@ export default function Header() {
           className={styles.buy}
           onClick={() =>
             window.location.replace(
-              "https://shauryaaher-expert-memory-5p6j44rjvrf4gp9-3000.preview.app.github.dev/api/stripe/"
+              "https://demo-five-ashy.vercel.app/api/stripe/"
             )
           }
         >
