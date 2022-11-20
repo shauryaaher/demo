@@ -12,9 +12,9 @@ export default async function handlePayments(req, res) {
     ],
     mode: "payment",
     success_url:
-      "https://localhost:3000/success",
+      "https://demo-five-ashy.vercel.app/success",
     cancel_url:
-      "http://localhost:3000/",
+      "http://demo-five-ashy.vercel.app/failure/",
   });
   res.redirect(302, session.url);
 }
