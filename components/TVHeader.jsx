@@ -4,35 +4,17 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className={styles.default}>
+    <header className={styles.default} style={{ height: "70px" }}>
       <nav className={styles.navigator}>
-        <Link href="/">
-          <Image
-            className={styles.logoo}
-            src="/logo.png"
-            height={60}
-            width={110}
-            alt="Logo"
-          />
-        </Link>
+        <Image
+          className={styles.logoo}
+          src="/emirates.png"
+          height={170}
+          width={120}
+          alt="Logo"
+        />
 
-        <ul className={styles.nav_links}>
-          <li>
-            <Link className={styles.navcontent} href="/general-electronics">
-              General electronics
-            </Link>
-          </li>
-        </ul>
-        <button
-          className={styles.buy}
-          onClick={() =>
-            window.location.replace(
-              "https://demo-five-ashy.vercel.app/api/stripe/"
-            )
-          }
-        >
-          Buy
-        </button>
+        <ul className={styles.nav_links}></ul>
       </nav>
     </header>
   );
