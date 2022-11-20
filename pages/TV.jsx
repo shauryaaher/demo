@@ -75,7 +75,7 @@ function Size() {
         <div
           className={styles.card}
           onClick={() => setClicked(!clicked)}
-          style={{ height: "100px" }}
+          style={{ height: "60px" }}
         >
           <div className={styles.container}>
             <h4>
@@ -83,7 +83,7 @@ function Size() {
             </h4>
           </div>
         </div>
-        <div className={styles.card}>
+        <div className={styles.card} style={{height: "100px"}}>
           <div className={styles.container}>
             <SizeBoxes />
           </div>
