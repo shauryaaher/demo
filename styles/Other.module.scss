@@ -29,7 +29,7 @@
 .logoo {
   mix-blend-mode: lighten;
   width: 115px;
-  height: 60px;
+  height: 100px;
   align-self: flex-end;
 }
 
@@ -68,4 +68,18 @@
 
 .card:hover {
   box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.4);
+}
+
+.buy {
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  height: 100px;
+  width: 276px;
+  transition: 0.5s;
+}
+
+.buy:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
