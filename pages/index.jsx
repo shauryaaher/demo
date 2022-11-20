@@ -46,8 +46,8 @@ export default function Home(props) {
           </h4>
           <p>
             <em>
-              Get 2 nights at the prestigious Burj Al Arab hotel in Dubai and a
-              tour @ INR. 100,000.
+              Fly with Emirates and get 2 nights at the prestigious Burj Al Arab
+              hotel in Dubai and a tour @ INR. 100,000.
             </em>
             <Image
               src="/hotel.jpg"
