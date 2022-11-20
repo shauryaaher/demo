@@ -4,6 +4,6 @@ export default function handler(req, res) {
   res
     .status(200)
     .send(
-      "Welcome to this demo site! You will be redirected here after you pay."
+      "Welome to Emirates"
     );
 }
