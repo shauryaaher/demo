@@ -6,15 +6,15 @@ export default async function handlePayments(req, res) {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
-        price: "price_1M5q45SJMBnIhuo7pKLB8cyX",
+        price: "price_1M67gKSJMBnIhuo7dm6tbFNY",
         quantity: 1,
       },
     ],
     mode: "payment",
     success_url:
-      "https://demo-five-ashy.vercel.app/",
+      "https://localhost:3000/success",
     cancel_url:
-      "https://demo-five-ashy.vercel.app/TV",
+      "http://localhost:3000/",
   });
   res.redirect(302, session.url);
 }
