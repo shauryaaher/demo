@@ -210,7 +210,7 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("http://demo-five-ashy/api/ny_to_bom/")
+              window.location.replace("http://demo-five-ashy.vercel.app/api/ny_to_bom/")
             }
           >
             Book now
