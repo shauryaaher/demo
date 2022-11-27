@@ -12,11 +12,7 @@ export default async function handlePayments(req, res) {
       },
     ],
     mode: "payment",
-    discounts: [
-      {
-        coupon: "test_id",
-      },
-    ],
+    allow_promotion_codes: true,
     success_url: "https://demo-five-ashy.vercel.app/success",
     cancel_url: "http://demo-five-ashy.vercel.app/failure",
   });
