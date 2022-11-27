@@ -7,6 +7,7 @@ export default async function handlePayments(req, res) {
     line_items: [
       {
         price: "price_1M68A1SJMBnIhuo7Rp4JJrRR",
+        adjustable_quantity: { enabled: true, minimum: 1, maximum: 9 },
         quantity: 1,
       },
     ],
