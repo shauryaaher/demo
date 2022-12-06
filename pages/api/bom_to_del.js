@@ -14,5 +14,5 @@ export default async function handlePayment(req, res) {
     success_url: "http://demo-five-ashy.vercel.app/success/",
     cancel_url: "http://demo-five-ashy.vercel.app/failure",
   });
-  res.redirect(session.url);
+  res.redirect(session.url, 301);
 }
