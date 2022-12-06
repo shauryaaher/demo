@@ -8,18 +8,15 @@ function Header() {
     <>
       <header className={styles.header} style={{ height: "70px" }}>
         <nav className={styles.nav}>
-          <Image
-            className={styles.logoo}
-            src="/emirates.png"
-            height={100}
-            width={110}
-            alt="Logo"
-          />
-          <ul className={styles.list} style={{ paddingTop: "20px" }}>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-          </ul>
+          <Link href="/">
+            <Image
+              className={styles.logoo}
+              src="/emirates.png"
+              height={100}
+              width={110}
+              alt="Logo"
+            />
+          </Link>
         </nav>
       </header>
     </>
@@ -50,7 +47,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/bom_to_dub")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/bom_to_dub"
+              )
             }
           >
             Book now
@@ -70,7 +69,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/bom_to_del")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/bom_to_del"
+              )
             }
           >
             Book now
@@ -91,7 +92,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/dub_to_bom/")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/dub_to_bom/"
+              )
             }
           >
             Book now
@@ -109,7 +112,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/dub_to_del/")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/dub_to_del/"
+              )
             }
           >
             Book now
@@ -127,7 +132,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/del_to_dub")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/del_to_dub"
+              )
             }
           >
             Book now
@@ -148,7 +155,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/lon_to_bom/")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/lon_to_bom/"
+              )
             }
           >
             Book now
@@ -169,7 +178,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/bom_to_lon/")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/bom_to_lon/"
+              )
             }
           >
             Book now
@@ -189,7 +200,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("https://demo-five-ashy.vercel.app/api/ny_to_lon/")
+              window.location.replace(
+                "https://demo-five-ashy.vercel.app/api/ny_to_lon/"
+              )
             }
           >
             Book now
@@ -210,7 +223,9 @@ export default function Book() {
           <button
             className={styles.buy}
             onClick={() =>
-              window.location.replace("http://demo-five-ashy.vercel.app/api/ny_to_bom/")
+              window.location.replace(
+                "http://demo-five-ashy.vercel.app/api/ny_to_bom/"
+              )
             }
           >
             Book now
