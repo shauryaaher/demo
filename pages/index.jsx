@@ -3,17 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
-export async function getServerSideProps() {
-  const req = await fetch("https://demo-five-ashy.vercel.app/api/hello");
-  const data = await req.text();
-  return {
-    props: {
-      heading: data,
-    },
-  };
-}
-
-export default function Home(props) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -37,7 +27,7 @@ export default function Home(props) {
       </header>
 
       <center>
-        <h1>{props.heading}</h1>
+        <h1>Welcome to Emirates</h1>
       </center>
       <div className={styles.card}>
         <div className={styles.container}>
