@@ -11,6 +11,7 @@ export default async function handlePayment(req, res) {
       },
     ],
     mode: "payment",
+    submit_type: "book",
     success_url: "http://demo-five-ashy.vercel.app/success/",
     cancel_url: "http://demo-five-ashy.vercel.app/failure/",
   });
