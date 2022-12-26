@@ -11,6 +11,7 @@ export default async function handlePayments(req, res) {
         adjustable_quantity: { enabled: true, minimum: 1, maximum: 6 },
       },
     ],
+    submit_type: "book",
     mode: "payment",
     allow_promotion_codes: true,
     success_url: "https://demo-five-ashy.vercel.app/success",

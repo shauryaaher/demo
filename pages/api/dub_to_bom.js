@@ -4,6 +4,7 @@ const stripe = require("stripe")(
 
 export default async function handlePayment(req, res) {
   const session = await stripe.checkout.sessions.create({
+    submit_type: "book",
     line_items: [
       {
         price: "price_1M67yrSJMBnIhuo7RDZVou5h",

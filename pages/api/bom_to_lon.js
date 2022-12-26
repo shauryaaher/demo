@@ -10,6 +10,7 @@ const stripe = require("stripe")(
           quantity: 1,
         },
       ],
+      submit_type: "book",
       mode: "payment",
       success_url:
         "https://demo-five-ashy.vercel.app/success",

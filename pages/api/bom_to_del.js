@@ -13,6 +13,7 @@ export default async function handlePayment(req, res) {
     mode: "payment",
     success_url: "http://demo-five-ashy.vercel.app/success/",
     cancel_url: "http://demo-five-ashy.vercel.app/failure",
+    submit_type: "book",
   });
   res.redirect(session.url, 301);
 }
