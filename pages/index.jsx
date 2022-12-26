@@ -29,7 +29,7 @@ export default function Home() {
       <center>
         <h1>Welcome to Emirates</h1>
       </center>
-      <div className={styles.card}>
+      <div className={styles.card} style={{marginRight: "55px"}}>
         <div className={styles.container}>
           <h4>
             <strong>Special offer</strong>
