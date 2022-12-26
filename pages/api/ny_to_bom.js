@@ -6,12 +6,13 @@ export default async function handlePayments(req, res) {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
-        price: "price_1M68BZSJMBnIhuo7vOemDctc",
-        adjustable_quantity: { enabled: true, minimum: 1, maximum: 4 },
+        price: "price_1MJDcSSJMBnIhuo7KD29vYe6",
+        adjustable_quantity: { enabled: true, minimum: 1, maximum: 3 },
         quantity: 1
       },
     ],
     mode: "payment",
+    allow_promotion_codes: true,
     success_url: "https://demo-five-ashy.vercel.app/success",
     cancel_url: "http://demo-five-ashy.vercel.app/failure",
   });
