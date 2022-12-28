@@ -1,0 +1,18 @@
+name: "hello"
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  hello_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: node_modules/.bin/jest
+      - run: npm run build
+      
