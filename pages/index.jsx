@@ -26,64 +26,23 @@ export default function Home() {
         </nav>
       </header>
 
-      <center>
-        <h1>Welcome to Emirates</h1>
-      </center>
-      <div className={styles.card} style={{marginRight: "55px"}}>
-        <div className={styles.container}>
-          <h4>
-            <strong>Special offer</strong>
-          </h4>
-          <p>
-            <em>
-              Fly with Emirates and get 2 nights at the prestigious Burj Al Arab
-              hotel in Dubai and a tour @ INR. 100,000.
-            </em>
-            <Image
-              src="/hotel.jpg"
-              alt="burj-al-arab"
-              height={270}
-              width={320}
-              style={{ borderRadius: "7px" }}
-            />
-          </p>
-        </div>
-      </div>
-      <div className={styles.card}>
-        <div className={styles.container}>
-          <h4>
-            <strong>Special offer</strong>
-          </h4>
-          <p>
-            <em>
-              Apply for the Emirates Platinum Card and get extra meals and
-              upgrades on your next flight.
-            </em>
-          </p>
-          <Image
-            src="/food.jpg"
-            alt="fried-rice"
-            height={300}
-            width={320}
-            style={{ borderRadius: "7px" }}
-          />
-        </div>
-      </div>
       <Link href="/book">
-        <div className={styles.card} style={{ cursor: "pointer" }}>
+        <div className={styles.card}>
           <div className={styles.container}>
-            <h4>Quick flights</h4>
+            <center>
+              <h1>
+                <strong>Welcome to Emirates!</strong>
+              </h1>
+              <p>Click here to check the quick flights.</p>
+              <Image
+                src="/plane.jpg"
+                height={300}
+                width={500}
+                alt="emirates-plane"
+                style={{ borderRadius: "10px" }}
+              />
+            </center>
           </div>
-          <p style={{ paddingLeft: "13px" }}>
-            <em>Check out the quick flight bookings.</em>
-          </p>
-          <Image
-            src="/plane.jpg"
-            alt="airplane-emirates"
-            height={200}
-            width={349}
-            style={{ borderRadius: "7px" }}
-          />
         </div>
       </Link>
     </>
