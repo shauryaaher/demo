@@ -36,10 +36,10 @@ export default function Home() {
               <p>Click here to check the quick flights.</p>
               <Image
                 src="/plane.jpg"
-                height={300}
+                height={500}
                 width={500}
                 alt="emirates-plane"
-                style={{ borderRadius: "10px" }}
+                className={styles.img}
               />
             </center>
           </div>
