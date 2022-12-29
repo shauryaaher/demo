@@ -8,7 +8,7 @@ export default async function handlePayments(req, res) {
       {
         price: "price_1M687cSJMBnIhuo7PF0tCqAE",
         quantity: 1,
-        adjustible_quantity: { enabled: true, minimum: 1, maximum: 4 },
+        adjustable_quantity: { enabled: true, minimum: 1, maximum: 4 },
       },
     ],
     submit_type: "book",
