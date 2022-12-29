@@ -9,6 +9,19 @@
   margin: 10px 20px;
 }
 
+@media screen and (max-width: 600px) {
+  div > div > center > .img {
+    display: none;
+  }
+}
+
+.img {
+  display: block;
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+}
+
 .product {
   padding: 0 70px 0 0;
 }
