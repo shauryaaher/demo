@@ -33,6 +33,7 @@ export default function Book() {
       <center>
         <h1>Quick flights</h1>
       </center>
+
       <div className={styles.card}>
         <div className={styles.container}>
           <h4>
