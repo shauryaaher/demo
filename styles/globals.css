@@ -7,10 +7,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  html,
-  body {
+  html {
     color-scheme: dark;
+  }
+  body {
     background-color: black;
+    color: white;
   }
 }
 
