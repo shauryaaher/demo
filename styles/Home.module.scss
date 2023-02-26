@@ -9,6 +9,13 @@
   margin: 10px 20px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: black;
+    color: white
+  }
+}
+
 @media screen and (max-width: 600px) {
   div > div > center > .img {
     display: none;
