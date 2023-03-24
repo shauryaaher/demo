@@ -23,6 +23,16 @@ function Header() {
   );
 }
 
+function DivComponent(props) {
+  return (
+    <>
+      <div className={styles.card}>
+        <div className={styles.container}>{props.children}</div>
+      </div>
+    </>
+  );
+}
+
 export default function Book() {
   return (
     <>
@@ -34,29 +44,27 @@ export default function Book() {
         <h1>Quick flights</h1>
       </center>
 
-      <div className={styles.card}>
-        <div className={styles.container}>
-          <h4>
-            <strong>
-              Chhatrapati Shivaji Maharaj International Airport to Dubai
-              International Airport
-            </strong>
-          </h4>
-          <p>
-            <em>Time: 4.5 hours</em>
-          </p>
-          <button
-            className={styles.buy}
-            onClick={() =>
-              window.location.replace(
-                "https://demo-five-ashy.vercel.app/api/bom_to_dub"
-              )
-            }
-          >
-            Book now
-          </button>
-        </div>
-      </div>
+      <DivComponent>
+        <h4>
+          <strong>
+            Chhatrapati Shivaji Maharaj International Airport to Dubai
+            International Airport
+          </strong>
+        </h4>
+        <p>
+          <em>Time: 4.5 hours</em>
+        </p>
+        <button
+          className={styles.buy}
+          onClick={() =>
+            window.location.replace(
+              "https://demo-five-ashy.vercel.app/api/bom_to_dub"
+            )
+          }
+        >
+          Book now
+        </button>
+      </DivComponent>
       <div className={styles.card}>
         <div className={styles.container}>
           <h4>
