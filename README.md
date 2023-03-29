@@ -15,3 +15,8 @@ Use this command to clone the repository. Note that after cloning, you won't be 
 ```Bash
 $ git clone https://github.com/<YOUR_USERNAME>/demo
 ```
+
+If you're cloning the original repository ~
+```Bash
+$ git clone https://github.com/shauryaaher/demo
+```
