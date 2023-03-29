@@ -20,7 +20,7 @@ export default function Home() {
           />
           <ul className={styles.nav_links} style={{ paddingTop: "20px" }}>
             <li>
-              <Link href="/book">Book a flight</Link>
+              <Link href="/book">Book flights</Link>
             </li>
           </ul>
         </nav>
