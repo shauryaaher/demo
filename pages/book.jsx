@@ -11,7 +11,7 @@ function Header() {
           <Link href="/">
             <Image
               className={styles.logoo}
-              src="/emirates.png"
+              src="/Magnum Opus.png"
               height={100}
               width={110}
               alt="Logo"

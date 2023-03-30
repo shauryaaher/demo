@@ -13,9 +13,9 @@ export default function Home() {
         <nav className={styles.navigator}>
           <Image
             className={styles.logoo}
-            src="/emirates.png"
+            src="/Magnum Opus.png"
             height={100}
-            width={110}
+            width={100}
             alt="Logo"
           />
           <ul className={styles.nav_links} style={{ paddingTop: "20px" }}>
@@ -31,7 +31,7 @@ export default function Home() {
           <div className={styles.container}>
             <center>
               <h1>
-                <strong>Welcome to Emirates!</strong>
+                <strong>Welcome to Magnum Opus!</strong>
               </h1>
               <p>Click here to check the quick flights.</p>
               <Image
