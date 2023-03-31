@@ -45,12 +45,12 @@ export default function Book() {
       </center>
 
       <DivComponent>
-        <h4>
+        <h2>
           <strong>
             Chhatrapati Shivaji Maharaj International Airport to Dubai
             International Airport
           </strong>
-        </h4>
+        </h2>
         <p>
           <em>Time: 4.5 hours</em>
         </p>
@@ -67,11 +67,11 @@ export default function Book() {
       </DivComponent>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>
               Chhatrapati Shivaji Maharaj International Airport to Delhi Airport
             </strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 2.5 hours</em>
           </p>
@@ -89,12 +89,12 @@ export default function Book() {
       </div>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>
               Dubai International Airport to Chhatrapati Shivaji Maharaj
               International Airport
             </strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 4.5 hours</em>
           </p>
@@ -112,9 +112,9 @@ export default function Book() {
       </div>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>Dubai International Airport to Delhi Airport</strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 4 hours</em>
           </p>
@@ -132,9 +132,9 @@ export default function Book() {
       </div>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>Delhi Airport to Dubai International Airport</strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 4.5 hours</em>
           </p>
@@ -152,12 +152,12 @@ export default function Book() {
       </div>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>
               London Heathrow to Chhatrapati Shivaji Maharaj International
               Airport
             </strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 9 hours </em>
           </p>
@@ -175,12 +175,12 @@ export default function Book() {
       </div>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>
               Chhatrapati Shivaji Maharaj International Airport to London
               Heathrow
             </strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 9.5 hours </em>
           </p>
@@ -198,11 +198,11 @@ export default function Book() {
       </div>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>
               John F. Kennedy International Airport to London Heathrow
             </strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 7 hours</em>
           </p>
@@ -220,12 +220,12 @@ export default function Book() {
       </div>
       <div className={styles.card}>
         <div className={styles.container}>
-          <h4>
+          <h2>
             <strong>
               John F. Kennedy International Airport to Chhatrapati Shivaji
               Maharaj International Airport
             </strong>
-          </h4>
+          </h2>
           <p>
             <em>Time: 14 hours</em>
           </p>
