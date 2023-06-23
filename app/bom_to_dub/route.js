@@ -1,8 +1,14 @@
-const stripe = require("stripe")(
-  "sk_test_51Kv2S3SJMBnIhuo7iZ3paAmDthweFE9Qqop8C9tpQclh4lSCWxKBUCiB349UpHwI5yS9F9QLOPrQHKjD1i88D4p1004pOkrlMR"
+import { NextResponse } from "next/server";
+import { Stripe } from "stripe";
+
+const stripe = new Stripe(
+  "sk_test_51Kv2S3SJMBnIhuo7iZ3paAmDthweFE9Qqop8C9tpQclh4lSCWxKBUCiB349UpHwI5yS9F9QLOPrQHKjD1i88D4p1004pOkrlMR",
+  {
+    apiVersion: "2022-11-15",
+  }
 );
 
-export default async function GET(req, res) {
+export async function GET(req, res) {
   const session = await stripe.checkout.sessions.create({
     submit_type: "book",
     line_items: [
@@ -13,7 +19,7 @@ export default async function GET(req, res) {
     ],
     mode: "payment",
     success_url: "https://demo-five-ashy.vercel.app/success",
-    cancel_url: "http://demo-five-ashy.vercel.app/failure/",
+    cancel_url: "https://demo-five-ashy.vercel.app/failure/",
   });
-  res.redirect(301, session.url);
+  return NextResponse.redirect(session.url, 302);
 }
