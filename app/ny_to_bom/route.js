@@ -2,13 +2,13 @@ const stripe = require("stripe")(
   "sk_test_51Kv2S3SJMBnIhuo7iZ3paAmDthweFE9Qqop8C9tpQclh4lSCWxKBUCiB349UpHwI5yS9F9QLOPrQHKjD1i88D4p1004pOkrlMR"
 );
 
-export default async function handlePayments(req, res) {
+export default async function GET(req, res) {
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
-        price: "price_1M6855SJMBnIhuo7frzb83YJ",
+        price: "price_1MJDcSSJMBnIhuo7KD29vYe6",
+        adjustable_quantity: { enabled: true, minimum: 1, maximum: 3 },
         quantity: 1,
-        adjustable_quantity: { enabled: true, minimum: 1, maximum: 6 },
       },
     ],
     submit_type: "book",
