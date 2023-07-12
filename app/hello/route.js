@@ -1,5 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
+import { NextResponse } from "next/server";
+
 export default function GET(req, res) {
-  return res.status(200).send("Welcome to Emirates");
+  return NextResponse.json({"data": "Hello world!"});
 }
