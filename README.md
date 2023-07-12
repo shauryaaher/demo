@@ -1,6 +1,6 @@
-![](https://api.checklyhq.com/v1/badges/checks/e89d904c-a354-4ef3-9fbb-8bef13bcea99?style=flat&theme=dark&responseTime=true)
+![](https://api.checklyhq.com/v1/badges/checks/1f89d40b-e87e-4f1d-b478-30333b63591d?style=flat&theme=dark&responseTime=true)
 
-![](https://api.checklyhq.com/v1/badges/checks/e89d904c-a354-4ef3-9fbb-8bef13bcea99?style=flat&theme=dark)
+![](https://api.checklyhq.com/v1/badges/checks/1f89d40b-e87e-4f1d-b478-30333b63591d?style=flat&theme=dark)
 
 # General information
 
