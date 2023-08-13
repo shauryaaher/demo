@@ -58,11 +58,7 @@ export default function Book() {
           </p>
           <button
             className={styles.buy}
-            onClick={() =>
-              window.location.replace(
-                "/bom_to_dub"
-              )
-            }
+            onClick={() => window.location.replace("/bom_to_dub")}
           >
             Book now
           </button>
@@ -80,11 +76,7 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/bom_to_del"
-                )
-              }
+              onClick={() => window.location.replace("/bom_to_del")}
             >
               Book now
             </button>
@@ -103,11 +95,7 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/dub_to_bom/"
-                )
-              }
+              onClick={() => window.location.replace("/dub_to_bom/")}
             >
               Book now
             </button>
@@ -123,11 +111,7 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/dub_to_del"
-                )
-              }
+              onClick={() => window.location.replace("/dub_to_del")}
             >
               Book now
             </button>
@@ -143,11 +127,7 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/del_to_dub"
-                )
-              }
+              onClick={() => window.location.replace("/del_to_dub")}
             >
               Book now
             </button>
@@ -166,11 +146,7 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/lon_to_bom"
-                )
-              }
+              onClick={() => window.location.replace("/lon_to_bom")}
             >
               Book now
             </button>
@@ -189,11 +165,7 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/bom_to_lon"
-                )
-              }
+              onClick={() => window.location.replace("/bom_to_lon")}
             >
               Book now
             </button>
@@ -211,11 +183,7 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/ny_to_lon"
-                )
-              }
+              onClick={() => window.location.replace("/ny_to_lon")}
             >
               Book now
             </button>
@@ -234,11 +202,26 @@ export default function Book() {
             </p>
             <button
               className={styles.buy}
-              onClick={() =>
-                window.location.replace(
-                  "/ny_to_bom"
-                )
-              }
+              onClick={() => window.location.replace("/ny_to_bom")}
+            >
+              Book now
+            </button>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.container}>
+            <h2>
+              <strong>
+                Chhatrapati Shivaji Maharaj International Airport to Baghdad
+                International Airport
+              </strong>
+            </h2>
+            <p>
+              <em>Time: 4 hours</em>
+            </p>
+            <button
+              className={styles.buy}
+              onClick={() => window.location.replace("/bom_to_bagh")}
             >
               Book now
             </button>
