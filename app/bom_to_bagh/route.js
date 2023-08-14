@@ -18,7 +18,7 @@ export async function GET(req, res) {
     submit_type: "book",
     mode: "payment",
     success_url: "https://demo-five-ashy.vercel.app/success",
-    cancel_url: "https://demo-five-ashy.vercel.app/failure",
+    cancel_url: "http://demo-five-ashy.vercel.app/failure",
   });
   return NextResponse.redirect(session.url, 302);
 }
