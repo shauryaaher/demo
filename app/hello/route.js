@@ -2,6 +2,6 @@
 
 import { NextResponse } from "next/server";
 
-export default function GET(req, res) {
+export function GET(req, res) {
   return NextResponse.json({"data": "Hello world!"});
 }
